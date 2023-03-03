@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./assets/A.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/script.js" defer></script>
+  <title>Ackag Official Site</title>
+</head>
+
+<body>
+  <!--------------------------------------Cabeçalho-------------------------------------------->
+  <header class="header">
+    <nav class="nav-bar">
+      <a href="/" class="logo"><img src="./assets/Ackag.png" class="logo"></a>
+      <ul class="nav-list">
+        <li><a href="#about"><b>Sobre</b></a></li>
+        <li><a href="contatos.php"><b>Contato</b></a></li>
+        <li><a href="registro_login/login.php"><b>Login</b></a></li>
+      </ul>
+      <div class="mobile-icon">
+        <button onclick="menuOn()"><img class="icon" src="assets/barra-menu.svg" alt=""></button>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+      <ul class="nav-list">
+        <li><a href="#about"><b>Sobre</b></a></li>
+        <li><a href="login.html"><b>Projetos</b></a></li>
+        <li><a href="contatos.php"><b>Contato</b></a></li>
+      </ul>
+    </div>
+  </header>
+  <!------------------------------------------------------------------------------------------->
+  <!----------------------------------------Main----------------------------------------------->
+  <main>
+    <section class="meet">
+      <div class="bg-img">
+      </div>
+      <div class="about-us" id="about">
+        <div class="principal-text">
+          <h1><span>QUEM SOMOS?</span></h1>
+        </div>
+        <div class="text-about">
+          <div class="text">
+            <h3>
+              A nossa empresa tem o propósito de criar softwares de desenvolvimento para organização
+              de sistemas e formalização de ideias para projetos. Também desenvolvemos jogos com intuito
+              de conscientização e desenvolvimento pessoal do usuário.
+              <br><br>
+              Vamos buscar colocar toda a nossa dedicação nos projetos e na formalização de novas ideias
+              com o intuito de apoiar o público.
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="line">
+    <section id="aplicativos">
+      <div class="principal-text">
+        <h1><span>PROJETOS</span></h1>
+      </div>
+      <section class="apps">
+        <div class="cards">
+          <a href="https://www.youtube.com/watch?v=uwfbIUCN3Tk&feature=youtu.be" target="_blank">
+            <img src="./assets/card-1.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h2><b>Avatim Champions</b></h2>
+              <p>Projeto com objetivo de trazer a cultura de povos nativos
+                da américa latina, para uma linguagem "pop" através de um jogo</p>
+            </div>
+          </a>
+
+        </div>
+
+        <div class="cards">
+          <a href="https://digitccode.github.io/Help.C/" target="_blank">
+            <img src="./assets/card-1.jpg" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h2><b>Help. C</b></h2>
+              <p>Projeto com o intuito de ajudar instituições de Caçapava a receber mais visibilidade
+                mostrando através de nosso site quem são elas</p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </section>
+    <hr class="line">
+  </main>
+  <!------------------------------------------------------------------------------------------->
+  <!--------------------------------------Footer----------------------------------------------->
+  <div class="footer-div" id="footer">
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <img src="./assets/Ackag.png" width="12%">
+        <h3>Ackag.Startup</h3>
+        <p class="footer-links">
+          <a href="#menu-top">Voltar ao início</a>
+        </p>
+        <a style="text-decoration: none;">
+          <p class="footer-company-name">©Ackag</p>
+        </a>
+      </div>
+
+      <div class="footer-right">
+        <!-- Sobre nós -->
+        <p class="footer-company-about">
+          <span>Sobre nós</span>
+          Nós acreditamos que a criatividade capacita a transformação, pessoalmente e profissionalmente em todos os
+          setores. Buscamos bons resultados, não somente pessoais, mas como um todo.<br>
+          <br>Site desenvolvido por @v1tooR (Github)
+          <!-- Redes Sociais -->
+        <div class="footer-icons">
+          <a href="https://pt-br.facebook.com/senaitaubate/"><img src="./assets/004-facebook.png"><i
+              class="fa fa-facebook"></i></a>
+          <a href="https://github.com/DigitCCode"><img src="./assets/github.png"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.instagram.com/akag_.br/"><img src="./assets/002-instagram.png"><i
+              class="fa fa-instagram"></i></a>
+          <a href="https://br.linkedin.com/company/escolasenaitaubate"><img src="./assets/001-linkedin.png"><i
+              class="fa fa-linkedin"></i></a>
+
+        </div>
+
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
