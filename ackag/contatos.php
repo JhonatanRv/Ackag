@@ -10,6 +10,24 @@ if(isset($_POST['submit'])){
   $email = $_POST['email'];
   $txt = $_POST['txt'];
 
+  //Evitando o cadastro de dados vazios
+  if ( (empty($_POST['nome'])) || (empty($_POST['fone'])) ){
+
+    if ((empty($_POST['nome']))):
+      $_SESSION['mensagem'] = "O Campo 'nome' é Obrigatório!";
+    endif;
+
+    if ((empty($_POST['fone']))):
+      $_SESSION['mensagem'] = "O Campo 'fone' é Obrigatório!";
+    endif;
+
+    header('Location: contatos.php');
+    die();
+
+
+     }
+
+
   //Insert no banco de dados das informações
   $result = mysqli_query($con, "INSERT INTO contatos(nome,telefone,email,motivo) VALUES ('$nome', '$fone', '$email', '$txt')");
   header("Location: Contatos.php");
@@ -53,14 +71,6 @@ if(isset($_POST['submit'])){
 
 <body>
 
-
-<script>
-  function Enviar(){
-    alert("Formulário cadastrado com sucesso")
-  
-}
-
-</script>
   <!--------------------------------------Cabeçalho-------------------------------------------->
   <header class="header">
     <nav class="nav-bar">
@@ -94,10 +104,10 @@ if(isset($_POST['submit'])){
         <div class="campos">
 
           <label for="nome">Nome:</label>
-          <input type="text" id="nomeid" placeholder="João Pedro da Silva" required="required" name="nome" />
+          <input type="text" id="nomeid" placeholder="João Pedro da Silva"  name="nome" />
 
           <label for="fone">Telefone:</label>
-          <input type="tel" id="foneid" maxlength="15" placeholder="Informe seu telefone sem o DDD" onkeyup="handlePhone(event)"  required="required" name="fone" />
+          <input type="tel" id="foneid" maxlength="15" placeholder="Informe seu telefone sem o DDD" onkeyup="handlePhone(event)"   name="fone" />
 
           <label for="email">Email:</label>
           <input type="email" id="emailid" placeholder="exemplo.123@gmail.com" name="email" />

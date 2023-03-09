@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="../css/forms.css">
   <link rel="icon" href="../assets/A.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   <script src="js/script.js" defer></script>
   <title>Ackag Official Site - Register</title>
 
@@ -24,7 +25,7 @@
       <a href="/" class="logo"><img src="../assets/Ackag.png" class="logo"></a>
       <ul class="nav-list">
         <li><a href="#about"><b>Sobre</b></a></li>
-        <li><a href="contatos.php"><b>Contato</b></a></li>
+        <li><a href="../contatos.php"><b>Contato</b></a></li>
         <li><a href="login.php"><b>Login</b></a></li>
       </ul>
       <div class="mobile-icon">
@@ -35,11 +36,12 @@
       <ul class="nav-list">
         <li><a href="#about"><b>Sobre</b></a></li>
         <li><a href="login.php"><b>Login</b></a></li>
-        <li><a href="contatos.php"><b>Contato</b></a></li>
+        <li><a href="../contatos.php"><b>Contato</b></a></li>
       </ul>
     </div>
   </header>
 <!--------------------------------------Body----------------------------------------------->
+
 
 <div class="form">
     <form action="newRegister.php" method="POST">
@@ -60,7 +62,7 @@
           <input type="email" id="emailid" required="required" name="email" />
 
           <label for="password">senha:</label>
-          <input type="password" id="senhaid" required="required"  name="senha" />
+          <input type="password" id="senhaid" required="required" name="senha" />
 
         
 
